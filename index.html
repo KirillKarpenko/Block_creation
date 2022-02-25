@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="main-inner">
+            <div class="out"></div>
+            <div class="controls">
+                <div class="create">
+                    <h1>Block creating / clearing</h1>
+                    <div class="in-data">
+                        <input type="number" class="width" placeholder="Width">
+                        <input type="number" class="height" placeholder="Height">
+                        <input type="color" class="color">
+                    </div>
+                    <div class="buttons">
+                        <button class="set" onclick="createBlock ()">Create</button>
+                        <button class="clear" onclick="deleteBlock ()">Clear</button>
+                    </div>
+                </div>
+                <div class="move">
+                    <h1>Movement</h1>
+                    <div class="buttons">
+                        <button onclick = "moveBlockUp ()">up</button>
+                        <button onclick = "moveBlockLeft ()" >left</button>
+                        <button onclick = "moveBlockDown ()">down</button>
+                        <button onclick = "moveBlockRight ()">right</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
